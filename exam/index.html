@@ -38,44 +38,105 @@
             margin: 10px auto;
             max-width: 900px;
         }
+        
+        @media screen and (min-width: 340px) {
+	/* スマホ */
+    h2{
+		font-size: 1.4rem; 
+	}
+	h3{
+		font-size: 1.1rem; 
+	}
+	h4 {
+		font-size: 0.9rem;
+	}
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* タブレット */
+    h2{
+		font-size: 1.6rem; 
+	}
+	h3{
+		font-size: 1.3rem;
+	}
+	h4 {
+		font-size: 1.0rem;
+	}
+    }
+
+    @media screen and (min-width: 1024px) {
+	/* PC */
+    h2{
+		font-size: 1.8rem; 
+	}
+	h3{
+		font-size: 1.5rem;
+	}
+	h4 {
+		font-size: 1.1rem;
+	}
+    }
+
+    a {
+    color:#425560;
+    }
+
+    a:hover {
+        color: #f68712;
+    }
 
     </style>
 </head>
 <body>
     <header>
-        <h1>第二学年予想問題作成委員会</h1>
+        <h2>第二学年予想問題作成委員会</h2>
     </header>
 
     <nav>
-        <a href="https://shiny-agent4.github.io/SGPECC/home">ホーム</a>
-        <a href="https://shiny-agent4.github.io/SGPECC/exam">過去問</a>
+        <a href="https://shiny-agent4.github.io/SGPECC/home/">ホーム</a>
+        <a href="https://shiny-agent4.github.io/SGPECC/exam/">過去問</a>
         <a href="#">お問い合わせ</a>
     </nav>
 
     <section>
-        <h2>過去問</h2>
+        <h3>過去問</h3>
     </section>
 
     <section>
-        <h2>２年１学期期末考査</h2>
-        <h3>数学</h3>
-        <h3>理科</h3>
-        <h3>英語</h3>
+        <h3>２年１学期期末考査</h3>
+        <h4>
+            <a href="https://www.data.jma.go.jp/eew/data/nc/index.html">数学（冨田）</a>
+        </h4>
+        <h4>
+            <a href="https://www.data.jma.go.jp/eew/data/nc/index.html">数学（朱山）</a>
+        </h4>
+        <h4>
+            <a href="https://www.data.jma.go.jp/eew/data/nc/index.html">理科</a>
+        </h4>
+        <h4>
+            <a href="https://www.data.jma.go.jp/eew/data/nc/index.html">英語</a>
+        </h4>
     </section>
 
     <section>
-        <h2>２年２学期中間考査</h2>
-        <h3>数学</h3>
+        <h3>２年２学期中間考査</h3>
+        <h4>
+            <a href="https://www.data.jma.go.jp/eew/data/nc/index.html">数学（冨田）</a>
+        </h4>
+        <h4>
+            <a href="https://www.data.jma.go.jp/eew/data/nc/index.html">数学（朱山）</a>
+        </h4>
     </section>
 
     <section>
-        <h2>２年２学期期末考査</h2>
-        <h3>準備中</h3>
+        <h3>２年２学期期末考査</h3>
+        <h4>準備中</h4>
     </section>
 
     <section>
-        <h2>２年３学期学年末考査</h2>
-        <h3>準備中</h3>
+        <h3>２年３学期学年末考査</h3>
+        <h4>準備中</h4>
     </section>
 
 
