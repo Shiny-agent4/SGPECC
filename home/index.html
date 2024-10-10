@@ -38,28 +38,75 @@
             margin: 10px auto;
             max-width: 900px;
         }
+       
+        @media screen and (min-width: 340px) {
+	/* スマホ */
+    h2{
+		font-size: 1.4rem; 
+	}
+	h3{
+		font-size: 1.1rem; 
+	}
+	h4 {
+		font-size: 0.9rem;
+	}
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* タブレット */
+    h2{
+		font-size: 1.6rem; 
+	}
+	h3{
+		font-size: 1.3rem;
+	}
+	h4 {
+		font-size: 1.0rem;
+	}
+    }
+
+    @media screen and (min-width: 1024px) {
+	/* PC */
+    h2{
+		font-size: 1.8rem; 
+	}
+	h3{
+		font-size: 1.5rem;
+	}
+	h4 {
+		font-size: 1.1rem;
+	}
+    }
+
+    a {
+    color:#425560;
+    }
+
+    a:hover {
+        color: #f68712;
+    }
 
     </style>
 </head>
 <body>
     <header>
-        <h1>第二学年予想問題作成委員会</h1>
+        <h2>第二学年予想問題作成委員会</h2>
     </header>
 
     <nav>
-        <a href="https://shiny-agent4.github.io/SGPECC/home">ホーム</a>
-        <a href="https://shiny-agent4.github.io/SGPECC/exam">過去問</a>
+        <a href="https://shiny-agent4.github.io/SGPECC/home/">ホーム</a>
+        <a href="https://shiny-agent4.github.io/SGPECC/exam/">過去問</a>
         <a href="#">お問い合わせ</a>
     </nav>
 
     <section>
-        <h2>第二学年予想問題作成委員会とは</h2>
+        <h3>第二学年予想問題作成委員会とは</h3>
         <p>　予想問題を作成するときに、それぞれバラバラで作っていた問題をより効率よく、統一するために2024年1学期に作られた委員会。</p>
         <p>　現在は数学、理科、英語の予想問題を作っている委員会。</p>
     </section>
     <section>
-        <h2>委員（2024年10月現在）</h2>
-        <h3>委員長</h3>
+        <h3>委員（2024年10月現在）</h3>
+        <h4>委員長</h4>
         <p>冨田 雅貴　朱山 豪春</p>
         <h3>副委員長</h3>
         <p>宮本 龍河　内藤 琢斗</p>
