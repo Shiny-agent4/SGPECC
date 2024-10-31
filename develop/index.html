@@ -9,25 +9,23 @@
   <button onclick="checkPassword()">送信</button>
 
   <script>
-// パスワードと対応するURLのオブジェクトを作成
-var passwords = {
-  "1234": "https://www.google.co.jp/",
-  "5678": "https://www.yahoo.co.jp/",
-  "abcd": "https://www.bing.com/"
-};
+    // パスワード、そのパスワードが有効な期間、および遷移先URLを設定
+    const passwords = [
+      { password: "b" url: "https://shiny-agent4.github.io/SGPECC/home/" },
+      { password: "a" url: "https://shiny-agent4.github.io/SGPECC/exam/" },
+    ];
 
-function check() {
-  var input = document.getElementById("password-input").value;
+    function checkPassword() {
+      const inputPassword = document.getElementById("password-input").value; // 入力されたパスワードを取得
 
-  // パスワードがオブジェクトの中にあるかチェック
-  if (passwords.hasOwnProperty(input)) {
-    location.href = passwords[input];
-  } else {
-    // パスワードが一致しない場合の処理
-    alert("パスワードが間違っています");
-  }
-}
-
+      for (const entry of passwords) {
+        if (inputPassword === entry.password) { // 入力されたパスワードとリストの中のパスワードを比較
+        }
+      }
+      
+      // 有効なパスワードが見つからなかった場合
+      alert("無効なパスワードです。");
+    }
   </script>
 </body>
 </html>
