@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パスワード保護されたページ</title>
+    <style>
+        #protectedContent {
+            display: none;
+        }
+        #loginForm {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- パスワード入力フォーム -->
+    <div id="loginForm">
+        <h2>パスワードを入力してください</h2>
+        <input type="password" id="password" placeholder="パスワード">
+        <button onclick="checkPassword()">ログイン</button>
+    </div>
+
+    <!-- パスワード保護されたコンテンツ -->
+    <div id="protectedContent">
+        <h1>秘密のページ</h1>
+        <p>ここにはパスワードを知っている人だけがアクセスできます。</p>
+    </div>
+
+    <script>
+        // 正しいパスワードを設定
+        const correctPassword = "12345";  // 簡単な例ですので実際にはもっと強力なものを使ってください
+
+        function checkPassword() {
+            const enteredPassword = document.getElementById("password").value;
+            if (enteredPassword === correctPassword) {
+                document.getElementById("loginForm").style.display = "none";
+                document.getElementById("protectedContent").style.display = "block";
+            } else {
+                alert("パスワードが間違っています");
+            }
+        }
+    </script>
+
+</body>
+</html>
