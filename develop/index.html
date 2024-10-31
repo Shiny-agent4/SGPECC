@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>期間限定パスワード</title>
+</head>
+<body>
+  <input id="password-input" type="password" placeholder="パスワードを入力">
+  <button onclick="checkPassword()">送信</button>
+
+  <script>
+// パスワードと対応するURLのオブジェクトを作成
+var passwords = {
+  "1234": "https://www.google.co.jp/",
+  "5678": "https://www.yahoo.co.jp/",
+  "abcd": "https://www.bing.com/"
+};
+
+function check() {
+  var input = document.getElementById("password-input").value;
+
+  // パスワードがオブジェクトの中にあるかチェック
+  if (passwords.hasOwnProperty(input)) {
+    location.href = passwords[input];
+  } else {
+    // パスワードが一致しない場合の処理
+    alert("パスワードが間違っています");
+  }
+}
+
+  </script>
+</body>
+</html>
