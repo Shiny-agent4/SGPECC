@@ -9,6 +9,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
@@ -39,70 +40,82 @@
             max-width: 900px;
         }
 
-        @media screen and (min-width: 340px) {
-	/* スマホ */
-    h2{
-		font-size: 1.4rem; 
-	}
-	h3{
-		font-size: 1.1rem; 
-	}
-	h4 {
-		font-size: 0.9rem;
-	}
-    p {
-		font-size: 0.9rem;
-    }
-    a {
-		font-size: 0.9rem;
-    }
+        @media screen and (min-width: 360px) {
+        /* スマホ */
+        h2{
+            font-size: 1.4rem; 
+        }
+        h3{
+            font-size: 1.1rem; 
+        }
+        h4 {
+          font-size: 1.0rem;
+        }
+        p {
+            font-size: 1.0rem;
+        }
+        a {
+            font-size: 1.0rem;
+        }
+        }
 
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-	/* タブレット */
-    h2{
-		font-size: 1.6rem; 
-	}
-	h3{
-		font-size: 1.2rem;
-	}
-	h4 {
-		font-size: 1.0rem;
-	}
-    p {
-		font-size: 1.0rem;
-    }
-    a {
-		font-size: 1.0rem;
-    }
-    }
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+        /* タブレット */
+        h2{
+            font-size: 1.6rem; 
+        }
+        h3{
+            font-size: 1.2rem;
+        }
+        h4 {
+            font-size: 1.0rem;
+        }
+        p {
+            font-size: 1.0rem;
+        }
+        a {
+            font-size: 1.0rem;
+        }
+        }
 
-    @media screen and (min-width: 1024px) {
-	/* PC */
-    h2{
-		font-size: 1.8rem; 
-	}
-	h3{
-		font-size: 1.3rem;
-	}
-	h4 {
-		font-size: 1.1rem;
-	}
-    p {
-		font-size: 1.1rem;
-    }
-    a {
-		font-size: 1.1rem;
-    }
-    }
+        @media screen and (min-width: 1024px) {
+        /* PC */
+        h2{
+            font-size: 1.8rem; 
+        }
+        h3{
+            font-size: 1.3rem;
+        }
+        h4 {
+            font-size: 1.1rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+        a {
+            font-size: 1.1rem;
+        }
+        }
 
-    a {
-    color:#425560;
-    }
+        a {
+        color:#425560;
+        }
 
-    a:hover {
-        color: #f68712;
-    }
+        a:hover {
+            color: #f68712;
+        }
+        
+        h4 {
+            text-indent: 1rem;
+        }
 
+        p {
+            text-indent: 1rem;
+        }
+
+        #paragraph {
+            text-indent: 2rem;
+        }
     </style>
 </head>
 <body>
@@ -132,26 +145,26 @@
 
     <section>
         <h3 id="1">第二学年予想問題作成委員会とは</h3>
-        <p>　予想問題を作成するときに、それぞれバラバラで作っていた問題をより効率よく、統一するために2024年1学期に作られた。</p>
-        <p>　現在は数学、理科、英語の予想問題を作っている。</p>
+        <p>予想問題を作成するときに、それぞれバラバラで作っていた問題をより効率よく作成し、統一するために2024年1学期に作られた。</br></p>
+        <p>現在は数学、理科、英語の予想問題を作っている。</p>
     </section>
 
     <section>
         <h3 id="2">委員名簿（2024年10月現在）</h3>
         <h4>委員長</h4>
-        <p>冨田 雅貴　朱山 豪春</p>
+        <p id="paragraph">冨田 雅貴&emsp;朱山 豪春</p>
         <h4>副委員長</h4>
-        <p>宮本 龍河　内藤 琢斗</p>
+        <p id="paragraph">宮本 龍河&emsp;内藤 琢斗</p>
         <h4>問題審査</h4>
-        <p>坂本 流一　佐々木 音</p>
+        <p  id="paragraph">坂本 流一&emsp;佐々木 音</p>
     </section>
 
     <section>
         <h3 id="3">今後の予定</h3>
         <h4>2学期期末考査</h4>
-        <p>11月12日(火)～14日(木)</p>
+        <p id="paragraph">11月12日(火)～14日(木)</p>
         <h4>3学期学年末考査</h4>
-        <p>2月25日(火)～27日(木)</p>
+        <p id="paragraph">2月25日(火)～27日(木)</p>
     </section>
 
 </body>
