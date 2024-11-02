@@ -3,45 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>パスワード保護されたページ</title>
+    <title>SGPECC CAO専用</title>
     <style>
-        #protectedContent {
+        body {
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        #login{
+            text-align: center;
+            input[type="text"],
+            input[type="password"] {
+            width: 300px;
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            }
+        }
+
+        .hidden {
             display: none;
         }
-        #loginForm {
-            display: block;
+
+        #error-message {
+            color: red;
+            margin-top: 10px;
         }
+
+        button{
+            width: 332px;
+            padding: 12px;
+            background-color: #3871c1;
+            color: #ffffff;
+            border: 1px solid #3871c1;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+
+        header {
+            background-color: #425560;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            padding: 20px;
+            background-color: white;
+            margin: 10px auto;
+            max-width: 900px;
+        }
+
+        @media screen and (min-width: 360px) {
+        /* スマホ */
+        h2{
+            font-size: 1.4rem; 
+        }
+        h3{
+            font-size: 1.1rem; 
+        }
+        h4 {
+            font-size: 1.0rem;
+        }
+        p {
+            font-size: 1.0rem;
+        }
+        a {
+            font-size: 1.0rem;
+        }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+        /* タブレット */
+        h2{
+            font-size: 1.6rem; 
+        }
+        h3{
+            font-size: 1.2rem;
+        }
+        h4 {
+            font-size: 1.0rem;
+        }
+        p {
+            font-size: 1.0rem;
+        }
+        a {
+            font-size: 1.0rem;
+        }
+        }
+
+        @media screen and (min-width: 1024px) {
+        /* PC */
+        h2{
+            font-size: 1.8rem; 
+        }
+        h3{
+            font-size: 1.3rem;
+        }
+        h4 {
+            font-size: 1.1rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+        a {
+            font-size: 1.1rem;
+        }
+        }
+
+        a {
+        color:#425560;
+        }
+
+        a:hover {
+            color: #f68712;
+        }
+        
+        h4 {
+            text-indent: 1rem;
+        }
+
+        p {
+            text-indent: 1rem;
+        }
+
+        #paragraph {
+            text-indent: 2rem;
+        }
+
     </style>
 </head>
 <body>
-
-    <!-- パスワード入力フォーム -->
-    <div id="loginForm">
+    <div id="login">
+        <section>
         <h2>パスワードを入力してください</h2>
         <input type="password" id="password" placeholder="パスワード">
+        <br>
         <button onclick="checkPassword()">ログイン</button>
+        <p id="error-message" class="hidden">パスワードが違います</p>
+        </section>
     </div>
 
-    <!-- パスワード保護されたコンテンツ -->
-    <div id="protectedContent">
-        <h1>秘密のページ</h1>
-        <p>ここにはパスワードを知っている人だけがアクセスできます。</p>
+    <div id="content" class="hidden">
+        <header>
+            <h2>第二学年予想問題作成委員会</h2>
+        </header>
+        <nav>
+            <a href="https://shiny-agent4.github.io/SGPECC/home/">ホーム</a>
+            <a href="https://shiny-agent4.github.io/SGPECC/exam/">過去問</a>
+            <a href="https://shiny-agent4.github.io/SGPECC/point/">要点</a>
+            <a href="https://shiny-agent4.github.io/SGPECC/contact/">お問い合わせ</a>
+        </nav>
+    
+        <section>
+            <h3>委員会総務本部ページ</h3>
+        </section>
+    
+        <section>
+            <h3>目次</h3>
+            <ul>
+                <li><a href="#1">作成中の予想問題</a></li>
+                <li><a href="#2">伝達事項</a></li>
+                <li><a href="#3">今後の予定</a></li>
+                <li><a href="#4">GitHubのデータ</a></li>
+                <li><a href="#5">お問い合わせフォーム対応用</a></li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3 id="1">作成中の予想問題</h3>
+            <h3>２年２学期期末考査</h3>
+            <h4>数学（冨田）</h4>
+            <p id="paragraph">
+                <a href="https://shiny-agent4.github.io/SGPECC/exam/Math/Tomita/第２学年１学期期末考査数学予想問題問題用紙.pdf"target="_blank">問題用紙</a>
+                <a>&emsp;&emsp;</a>
+                <a href="https://shiny-agent4.github.io/SGPECC/exam/Math/Tomita/第２学年１学期期末考査数学予想問題解答用紙.pdf"target="_blank">解答用紙</a>
+                <a>&emsp;&emsp;</a>
+                <a href="https://shiny-agent4.github.io/SGPECC/exam/Math/Tomita/第２学年１学期期末考査数学予想問題正答.pdf"target="_blank">正答</a>
+            </p>
+        </section>
+    
+        <section>
+            <h3 id="2">委員名簿（2024年10月現在）</h3>
+            <h4>委員長</h4>
+            <p id="paragraph">冨田 雅貴&emsp;朱山 豪春</p>
+            <h4>副委員長</h4>
+            <p id="paragraph">宮本 龍河&emsp;内藤 琢斗</p>
+            <h4>問題審査</h4>
+            <p  id="paragraph">坂本 流一&emsp;佐々木 音</p>
+        </section>
+    
+        <section>
+            <h3 id="3">今後の予定</h3>
+            <h4>2学期期末考査</h4>
+            <p id="paragraph">11月12日(火)～14日(木)</p>
+            <h4>3学期学年末考査</h4>
+            <p id="paragraph">2月25日(火)～27日(木)</p>
+        </section>
+
+        <section>
+            <h3 id="4">GitHubのデータ</h3>
+            <p>
+                <a href="https://github.com/Shiny-agent4/SGPECC/tree/main"target="_blank">GitHub</a>
+            </p>
+        </section> 
+
+        <section>
+            <h3 id="5">お問い合わせフォーム対応用</h3>
+            <p>
+                <a>まだ未設定</a>
+            </p>
+        </section> 
     </div>
 
     <script>
-        // 正しいパスワードを設定
-        const correctPassword = "12345";  // 簡単な例ですので実際にはもっと強力なものを使ってください
+    function checkPassword() {
+        const passwordInput = document.getElementById("password").value;
+        const correctPassword = "SGPECC";  // 設定したいパスワードに置き換え
 
-        function checkPassword() {
-            const enteredPassword = document.getElementById("password").value;
-            if (enteredPassword === correctPassword) {
-                document.getElementById("loginForm").style.display = "none";
-                document.getElementById("protectedContent").style.display = "block";
-            } else {
-                alert("パスワードが間違っています");
-            }
+        if (passwordInput === correctPassword) {
+            document.getElementById("login").classList.add("hidden");
+            document.getElementById("content").classList.remove("hidden");
+        } else {
+            document.getElementById("error-message").classList.remove("hidden");
         }
+    }
     </script>
-
 </body>
 </html>
