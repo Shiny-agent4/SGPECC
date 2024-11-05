@@ -4,6 +4,7 @@
     <link rel="shortcut icon" href="https://shiny-agent4.github.io/SGPECC/favicon2.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>SGPECC CAO専用</title>
     <style>
         body {
@@ -206,8 +207,10 @@
             <p id="paragraph">冨田 雅貴&emsp;朱山 豪春</p>
             <h4>副委員長</h4>
             <p id="paragraph">宮本 龍河&emsp;内藤 琢斗</p>
+            <h4>問題作成</h4>
+            <p id="paragraph">江崎 祐士&emsp;畠中 滉青</p>
             <h4>問題審査</h4>
-            <p  id="paragraph">坂本 流一&emsp;佐々木 音</p>
+            <p id="paragraph">坂本 流一&emsp;佐々木 音</p>
         </section>
     
         <section>
@@ -246,5 +249,18 @@
         }
     }
     </script>
+    <script>
+        function checkPassword() {
+            const passwordInput = document.getElementById("password").value;
+            const correctPassword = "sgpecc";  // 設定したいパスワードに置き換え
+    
+            if (passwordInput === correctPassword) {
+                document.getElementById("login").classList.add("hidden");
+                document.getElementById("content").classList.remove("hidden");
+            } else {
+                document.getElementById("error-message").classList.remove("hidden");
+            }
+        }
+        </script>
 </body>
 </html>
