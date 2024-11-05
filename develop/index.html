@@ -238,18 +238,18 @@
     </div>
 
     <script>
-    function checkPassword() {
-        const passwordInput = document.getElementById("password").value;
-        const correctPassword1 = "SGPECC";  // 1つ目のパスワード
-        const correctPassword2 = "sgpecc";  // 2つ目のパスワード
-
-        if (passwordInput === correctPassword) {
-            document.getElementById("login").classList.add("hidden");
-            document.getElementById("content").classList.remove("hidden");
-        } else {
-            document.getElementById("error-message").classList.remove("hidden");
+            function checkPassword() {
+            const passwordInput = document.getElementById("password").value;
+            const correctPassword1 = "SGPECC";  // 1つ目のパスワード
+            const correctPassword2 = "sgpecc";  // 2つ目のパスワード
+        
+            if (passwordInput === correctPassword1 || passwordInput === correctPassword2) {
+                document.getElementById("login").classList.add("hidden");
+                document.getElementById("content").classList.remove("hidden");
+            } else {
+                document.getElementById("error-message").classList.remove("hidden");
+            }
         }
-    }
-    </script>
+            </script>
 </body>
 </html>
