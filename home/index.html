@@ -116,6 +116,33 @@
         #paragraph {
             text-indent: 2rem;
         }
+
+
+                .table *, .table *:before, .table *:after {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table th {
+            width: 13%;
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #dddddd;
+        }
+        .table td {
+            text-align: center;
+            vertical-align: top;
+            padding: 10px;
+            border: 1px solid #dddddd;
+        }
+        .table td:first-child {
+            text-align: center;
+            vertical-align: middle;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -132,6 +159,55 @@
 
     <section>
         <h3>ホーム</h3>
+    </section>
+
+    <section>
+        <h3>学年平均点数速報（第二学２学期期末考査）</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                <th>教科</th>
+                <th>国語</th>
+                <th>数学</th>
+                <th>英語</th>
+                <th>理科</th>
+                <th>社会</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>点数</td>
+                <td>55点</td>
+                <td>65.8点</td>
+                <td>55点</td>
+                <td>66点</td>
+                <td>不明</td>
+                </tr>
+                </tbody>
+            </table>
+            <br></br>
+        <table class="table">
+            <thead>
+                <tr>
+                <th>教科</th>
+                <th>音楽</th>
+                <th>保体</th>
+                <th>美術</th>
+                <th>技術</th>
+                <th>家庭</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>点数</td>
+                <td>不明</td>
+                <td>不明</td>
+                <td>不明</td>
+                <td>不明</td>
+                <td>不明</td>
+                </tr>
+                </tbody>
+            </table>
     </section>
 
     <section>
@@ -159,7 +235,7 @@
         <p id="paragraph">江崎 祐士&emsp;畠中 滉青</p>
         <p id="paragraph">内藤 琢斗&emsp;井口 正澄</p>
         <h4>問題審査</h4>
-        <p id="paragraph">坂本 流一&emsp;佐々木 音</p>
+        <p id="paragraph">坂本 流一&emsp;佐々木 音&emsp;松田 悠里</p>
     </section>
 
     <section>
