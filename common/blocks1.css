@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* 囲み */
+.cp-wp{
+  padding: 20px;
+  padding-left: 4%;
+  padding-right: 4%;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+}
+.cp-wp::before{
+  top: -21px;
+  height: calc(100% + 42px);
+}
+
+/* 線 */
+.cp-border{
+  border-top: 1px solid #ccc;
+}
+.cp-border hr{
+  display: none;
+}
