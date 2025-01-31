@@ -2845,14 +2845,6 @@ body[data-bg-color=blue] .site-under-link-buttons__wrap a:hover {
   fill: #fff;
 }
 
-.site-common-main__inner a {
-  color: #25408F;
-}
-
-.site-common-main__inner a[href^=tel] {
-  color: #25408F;
-}
-
 body[data-bg-color=blue] .site-common-main__inner a[href^=tel] {
   color: #fff;
 }
@@ -3609,4 +3601,3 @@ a.site-common__skip:focus ~ .site-common__container .site-common__header-menu {
 .fr-editor .movie-display__wrap .cp-inner a {
   display: inline;
 }
-
